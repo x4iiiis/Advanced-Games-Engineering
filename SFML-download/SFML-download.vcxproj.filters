@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\95b8d00493bcc8c3f9eb029db2e52485\SFML-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\4e607d9f68700ae0af29adae2b50b871\SFML-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\SFML-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ECF0D7D3-42CA-3D0B-BB98-D4CC44E46A78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

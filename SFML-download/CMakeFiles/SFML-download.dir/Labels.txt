@@ -1,0 +1,15 @@
+# Target labels
+ SFML-download
+# Source files and their labels
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/SFML-download
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeLists.txt
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/4e607d9f68700ae0af29adae2b50b871/SFML-download.rule
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/95b8d00493bcc8c3f9eb029db2e52485/SFML-download-complete.rule
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-install.rule
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-mkdir.rule
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-download.rule
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-update.rule
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-patch.rule
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-configure.rule
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-build.rule
+C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-test.rule

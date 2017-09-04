@@ -1,0 +1,103 @@
+﻿  Building Custom Rule C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-src/src/SFML/Graphics/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-build/src/SFML/Graphics/CMakeFiles/generate.stamp is up-to-date.
+  BlendMode.cpp
+  Color.cpp
+  Font.cpp
+  Glsl.cpp
+  GLCheck.cpp
+  GLExtensions.cpp
+  Image.cpp
+  ImageLoader.cpp
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(925): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(947): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(992): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(1014): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(1236): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(1274): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(1294): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(3198): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(3226): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(3244): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4356): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4484): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4490): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4498): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4500): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4508): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4543): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4546): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4573): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4576): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4587): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4625): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4803): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4824): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4829): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4961): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4965): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4973): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4981): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(4994): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5011): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5015): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5155): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5183): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5194): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5195): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5209): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5228): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5246): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5257): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5266): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5293): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5294): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5507): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5511): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5516): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5527): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5556): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5563): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5580): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5610): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5643): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5756): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5765): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5770): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5774): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(5823): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\extlibs\headers\stb_image\stb_image.h(6038): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+  RenderStates.cpp
+  RenderTexture.cpp
+  RenderTarget.cpp
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\src\SFML\Graphics\RenderTarget.cpp(287): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  RenderWindow.cpp
+  Shader.cpp
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\src\SFML\Graphics\Shader.cpp(596): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\src\SFML\Graphics\Shader.cpp(607): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\src\SFML\Graphics\Shader.cpp(618): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\src\SFML\Graphics\Shader.cpp(629): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\src\SFML\Graphics\Shader.cpp(644): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src\src\SFML\Graphics\Shader.cpp(659): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Texture.cpp
+  TextureSaver.cpp
+  Transform.cpp
+  Transformable.cpp
+  View.cpp
+  Vertex.cpp
+  GLLoader.cpp
+  Generating Code...
+  Compiling...
+  Shape.cpp
+  CircleShape.cpp
+  RectangleShape.cpp
+  ConvexShape.cpp
+  Sprite.cpp
+  Text.cpp
+  VertexArray.cpp
+  RenderTextureImpl.cpp
+  RenderTextureImplFBO.cpp
+  RenderTextureImplDefault.cpp
+  Generating Code...
+     Creating library C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/bin/DEBUG/sfml-graphics-d.lib and object C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/bin/DEBUG/sfml-graphics-d.exp
+  sfml-graphics.vcxproj -> C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\bin\DEBUG\sfml-graphics-d-2.dll
+  sfml-graphics.vcxproj -> C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-build/lib/Debug/sfml-graphics.pdb (Full PDB)

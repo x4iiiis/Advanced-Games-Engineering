@@ -1,0 +1,932 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D407F7B8-0E12-370F-B053-E59FE9A299CA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>SFML-download</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download -BC:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download --check-stamp-file C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeLists.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystem.cmake.in;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\3.9.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\tmp\SFML-download-cfgcmd.txt.in;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download -BC:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download --check-stamp-file C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeLists.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystem.cmake.in;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\3.9.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\tmp\SFML-download-cfgcmd.txt.in;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download -BC:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download --check-stamp-file C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeLists.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystem.cmake.in;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\3.9.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\tmp\SFML-download-cfgcmd.txt.in;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download -BC:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download --check-stamp-file C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeLists.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystem.cmake.in;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\3.9.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\tmp\SFML-download-cfgcmd.txt.in;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp/SFML-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-download.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\SFML-download-gitinfo.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp/SFML-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-download.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\SFML-download-gitinfo.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp/SFML-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-download.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\SFML-download-gitinfo.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp/SFML-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-download.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\SFML-download-gitinfo.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp/SFML-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-update.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing update step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp/SFML-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-update.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing update step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp/SFML-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-update.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing update step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/tmp/SFML-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-update.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-patch.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-patch.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-patch.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-patch.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-configure.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\tmp\SFML-download-cfgcmd.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No configure step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-configure.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\tmp\SFML-download-cfgcmd.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No configure step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-configure.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\tmp\SFML-download-cfgcmd.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No configure step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-configure.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\tmp\SFML-download-cfgcmd.txt;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-build.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No build step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-build.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No build step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-build.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No build step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-build.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-install.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No install step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-install.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No install step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-install.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No install step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-install.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\22b1c1d3ac68ecdacc891931fca7a290\SFML-download-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-test.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-test.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-test.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/22b1c1d3ac68ecdacc891931fca7a290/SFML-download-test.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\95b8d00493bcc8c3f9eb029db2e52485\SFML-download-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/$(Configuration)/SFML-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/95b8d00493bcc8c3f9eb029db2e52485/SFML-download-complete.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\$(Configuration)\SFML-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/$(Configuration)/SFML-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/95b8d00493bcc8c3f9eb029db2e52485/SFML-download-complete.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\$(Configuration)\SFML-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/$(Configuration)/SFML-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/95b8d00493bcc8c3f9eb029db2e52485/SFML-download-complete.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\$(Configuration)\SFML-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'SFML-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/$(Configuration)/SFML-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/SFML-download-prefix/src/SFML-download-stamp/$(Configuration)/SFML-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/95b8d00493bcc8c3f9eb029db2e52485/SFML-download-complete.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-mkdir;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-download;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-update;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-patch;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-configure;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-build;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-install;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\SFML-download-prefix\src\SFML-download-stamp\$(Configuration)\SFML-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\$(Configuration)\SFML-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\4e607d9f68700ae0af29adae2b50b871\SFML-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/4e607d9f68700ae0af29adae2b50b871/SFML-download.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\$(Configuration)\SFML-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\SFML-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/4e607d9f68700ae0af29adae2b50b871/SFML-download.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\$(Configuration)\SFML-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\SFML-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/4e607d9f68700ae0af29adae2b50b871/SFML-download.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\$(Configuration)\SFML-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\SFML-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/4e607d9f68700ae0af29adae2b50b871/SFML-download.rule;C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\$(Configuration)\SFML-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\SFML-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\CMakeFiles\SFML-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\40168766\Desktop\Astral_Insanity-master\Astral_Insanity-master\Advanced-Games-Engineering\SFML-download\ZERO_CHECK.vcxproj">
+      <Project>{C6A4C1AD-F09A-34A5-A4E4-D6719C6AEAB4}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
