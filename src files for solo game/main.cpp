@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <stdlib.h>
+#include <fstream>
 
 
 #include "player.h"
@@ -51,6 +52,14 @@ int Difficulty = 3; //Switch case me
 //Scores
 int Score = 0;
 int HighScore = 0;
+
+
+//ifstream InputFile("res/Scoreboard.txt");
+//if(InputFile.isOpen())
+//{
+//	HighScore >> 
+//}
+
 
 
 //Game States
@@ -129,16 +138,48 @@ void GameOverMethod()
 	GameOver = true;
 	std::cout << "GAME OVER!" << std::endl;
 	std::cout << "" << std::endl;
+
 	
-	//If current score is greater than the highest recorded score, record the current score as the high score
-	if (Score > HighScore)
+
+	ifstream InputFile("res/Scoreboard.txt");
+	if(InputFile.is_open())
 	{
-		HighScore = Score;
-		//Do stuff with high score, writing to a file etc
+		InputFile >> HighScore;
+		std::cout << "Highscore from the file is: " << HighScore << std::endl;
+		std::cout << "" << std::endl;
+
+		//If current score is greater than the highest recorded score, record the current score as the high score
+		if (Score > HighScore)
+		{
+			std::cout << "New high score!" << std::endl;
+			std::cout << "" << std::endl;
+			//HighScore = Score;
+			//Do stuff with high score, writing to a file etc
+			ofstream OutputFile("res/Scoreboard.txt");
+			//OutputFile << HighScore;
+			OutputFile << Score;
+		}
 	}
+
+	if(OutputFile)
+	{
+		std::cout << "Scoreboard exists" << std::endl;
+	}
+
+
+
+	//If current score is greater than the highest recorded score, record the current score as the high score
+	//if (Score > HighScore)
+	//{
+	//	HighScore = Score;
+	//	//Do stuff with high score, writing to a file etc
+	//	ofstream OutputFile("res/Scoreboard.txt");
+	//	OutputFile << HighScore;
+	//}
 	
 	std::cout << "High Score: " << HighScore << std::endl;
 	std::cout << "Score :" << Score << std::endl;
+	std::cout << "" << std::endl;
 
 	//Resetting the current score, probably won't need this here but for now I do cause the game doesn't actually end
 	Score = 0;
