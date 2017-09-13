@@ -1,3 +1,0 @@
-C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/SFML-download.dir
-C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/ALL_BUILD.dir
-C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-download/CMakeFiles/ZERO_CHECK.dir

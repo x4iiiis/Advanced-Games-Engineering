@@ -1,9 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-src/src/SFML/Graphics/CMakeLists.txt
-C:/Program Files/CMake/share/cmake-3.9/Modules/FindOpenGL.cmake
-C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
-C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
-C:/Program Files/CMake/share/cmake-3.9/Modules/FindJPEG.cmake
-C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
-C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
-C:/Users/40168766/Desktop/Astral_Insanity-master/Astral_Insanity-master/Advanced-Games-Engineering/SFML-src/cmake/Modules/FindFreetype.cmake
