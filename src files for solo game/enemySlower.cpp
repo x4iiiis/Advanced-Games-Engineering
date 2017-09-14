@@ -10,30 +10,42 @@ enemySlower::enemySlower()
 
 void enemySlower::update()
 {
-	if (spawned == true && timeLeft > sf::seconds(0))
-	{
-		timeLeft--;
-	}
+	//if (spawned == true && spawnClock.getElapsedTime().asSeconds > timeLeft)//timeLeft > sf::seconds(0))
+	//{
+	//	timeLeft--;
+	//}
 
-	if (timeLeft <= 0)
+	/*if (timeLeft <= 0)
 	{
 		spawned = false;
 		timeLeft = 30;
 		std::cout << "Enemy slower despawned!" << std::endl;
 		std::cout << "" << std::endl;
-	}
+	}*/
 
-	if (activated == true && duration > 0)
+
+	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
 	{
 		spawned = false;
-		duration--;
+		spawnClock.restart();
+		std::cout << "Enemy slower despawned!" << std::endl;
+		std::cout << "" << std::endl;
+	}
+
+
+
+	if (activated == true && activeClock.getElapsedTime() <= duration) //duration > 0)
+	{
+		spawned = false;
+		activeClock.restart();
 		std::cout << "Enemy Slower activated" << std::endl;
 		std::cout << "" << std::endl;
 	}
 
-	if (duration <= 0)
+	if (activeClock.getElapsedTime() >= duration && activated == true)//(duration <= 0)
 	{
 		activated = false;
+		spawnClock.restart();
 		std::cout << "Enemy Slower expired" << std::endl;
 		std::cout << "" << std::endl;
 

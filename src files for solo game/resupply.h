@@ -6,6 +6,9 @@ public:
 	bool spawned = false;
 	sf::Time timeLeft = sf::seconds(10);
 
+	sf::Clock activeClock;
+	sf::Clock spawnClock;
+
 	resupply();
 	void update();
 };

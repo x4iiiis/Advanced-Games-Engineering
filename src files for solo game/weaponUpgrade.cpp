@@ -10,32 +10,29 @@ weaponUpgrade::weaponUpgrade()
 
 void weaponUpgrade::update()
 {
-	if (spawned == true && timeLeft > 0)
-	{
-		timeLeft--;
-	}
-
-	if (timeLeft <= 0)
+	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
 	{
 		spawned = false;
-		timeLeft = 30;
+		spawnClock.restart();
 		std::cout << "Weapon Upgrade despawned!" << std::endl;
 		std::cout << "" << std::endl;
 	}
 
-	if (activated == true && duration > 0)
+	if (activated == true && activeClock.getElapsedTime() >= duration) //duration > 0)
 	{
 		spawned = false;
-		duration--;
+		activeClock.restart();
 		std::cout << "Weapon Upgrade activated" << std::endl;
 		std::cout << "" << std::endl;
 	}
 
-	if (duration <= 0)
+	if (activeClock.getElapsedTime() >= duration && activated == true)//(duration <= 0)
 	{
 		activated = false;
+		spawnClock.restart();
 		std::cout << "Weapon Upgrade expired" << std::endl;
 		std::cout << "" << std::endl;
 
 	}
+
 }

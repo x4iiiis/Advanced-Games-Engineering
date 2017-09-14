@@ -147,7 +147,6 @@ void GameOverMethod()
 
 	ifstream InputFile("res/Scoreboard.txt");
 	if(InputFile.is_open())
-<<<<<<< HEAD
 	{
 		InputFile >> HighScore;
 		std::cout << "Highscore from the file is: " << HighScore << std::endl;
@@ -171,7 +170,6 @@ void GameOverMethod()
 		std::cout << "Scoreboard exists" << std::endl;
 	}*/
 
-=======
 	{
 		InputFile >> HighScore;
 		std::cout << "Highscore from the file is: " << HighScore << std::endl;
@@ -190,12 +188,10 @@ void GameOverMethod()
 		}
 	}
 
-	if(OutputFile)
+	/*if(OutputFile)
 	{
 		std::cout << "Scoreboard exists" << std::endl;
-	}
-
->>>>>>> origin/master
+	}*/
 
 
 	//If current score is greater than the highest recorded score, record the current score as the high score

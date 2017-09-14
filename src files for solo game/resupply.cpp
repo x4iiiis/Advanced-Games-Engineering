@@ -10,7 +10,7 @@ resupply::resupply()
 
 void resupply::update()
 {
-	if (spawned == true && timeLeft > 0)
+	/*if (spawned == true && timeLeft > 0)
 	{
 		timeLeft--;
 	}
@@ -22,4 +22,15 @@ void resupply::update()
 		std::cout << "Resupply despawned!" << std::endl;
 		std::cout << "" << std::endl;
 	}
+
+
+	///*/
+	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
+	{
+		spawned = false;
+		spawnClock.restart();
+		std::cout << "Resupply despawned!" << std::endl;
+		std::cout << "" << std::endl;
+	}
+
 }

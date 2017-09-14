@@ -10,7 +10,7 @@ healthRegen::healthRegen()
 
 void healthRegen::update()
 {
-	if (spawned == true && timeLeft > 0)
+	/*if (spawned == true && timeLeft > 0)
 	{
 		timeLeft--;
 	}
@@ -20,6 +20,14 @@ void healthRegen::update()
 		spawned = false;
 		timeLeft = 30;
 		std::cout << "Health Regen despawned!" << std::endl;
+		std::cout << "" << std::endl;
+	}*/
+
+	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
+	{
+		spawned = false;
+		spawnClock.restart();
+		std::cout << "Resupply despawned!" << std::endl;
 		std::cout << "" << std::endl;
 	}
 }
