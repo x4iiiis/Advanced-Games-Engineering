@@ -3,6 +3,7 @@
 class player : public object
 {
 public:
+	int fullHealth = 100;
 	int health = 100;
 	int ammo = 25;
 	int weaponStrength = 1;

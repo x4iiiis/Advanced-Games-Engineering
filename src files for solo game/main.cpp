@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <stdlib.h>
+#include <fstream>
 
 
 #include "player.h"
@@ -11,6 +12,10 @@
 #include "enemy1.h"
 #include "enemy2.h"
 #include "enemy3.h"
+#include "healthRegen.h"
+#include "resupply.h"
+#include "weaponUpgrade.h"
+#include "enemySlower.h"
 
 
 
@@ -38,7 +43,7 @@ Texture missileTex;
 //If we do need sprites for powerups they'll need textures too.. well actually either way they will I think
 Texture HealthRegenTex;
 Texture ResupplyTex;
-Texture DecreasedEnemySpeedTex;
+Texture enemySlowerTex;
 Texture WeaponUpgradeTex;
 
 
@@ -51,6 +56,14 @@ int Difficulty = 3; //Switch case me
 //Scores
 int Score = 0;
 int HighScore = 0;
+
+
+//ifstream InputFile("res/Scoreboard.txt");
+//if(InputFile.isOpen())
+//{
+//	HighScore >> 
+//}
+
 
 
 //Game States
@@ -129,16 +142,48 @@ void GameOverMethod()
 	GameOver = true;
 	std::cout << "GAME OVER!" << std::endl;
 	std::cout << "" << std::endl;
+
 	
-	//If current score is greater than the highest recorded score, record the current score as the high score
-	if (Score > HighScore)
+
+	ifstream InputFile("res/Scoreboard.txt");
+	if(InputFile.is_open())
 	{
-		HighScore = Score;
-		//Do stuff with high score, writing to a file etc
+		InputFile >> HighScore;
+		std::cout << "Highscore from the file is: " << HighScore << std::endl;
+		std::cout << "" << std::endl;
+
+		//If current score is greater than the highest recorded score, record the current score as the high score
+		if (Score > HighScore)
+		{
+			std::cout << "New high score!" << std::endl;
+			std::cout << "" << std::endl;
+			//HighScore = Score;
+			//Do stuff with high score, writing to a file etc
+			ofstream OutputFile("res/Scoreboard.txt");
+			//OutputFile << HighScore;
+			OutputFile << Score;
+		}
 	}
+
+	/*if(OutputFile)
+	{
+		std::cout << "Scoreboard exists" << std::endl;
+	}*/
+
+
+
+	//If current score is greater than the highest recorded score, record the current score as the high score
+	//if (Score > HighScore)
+	//{
+	//	HighScore = Score;
+	//	//Do stuff with high score, writing to a file etc
+	//	ofstream OutputFile("res/Scoreboard.txt");
+	//	OutputFile << HighScore;
+	//}
 	
 	std::cout << "High Score: " << HighScore << std::endl;
 	std::cout << "Score :" << Score << std::endl;
+	std::cout << "" << std::endl;
 
 	//Resetting the current score, probably won't need this here but for now I do cause the game doesn't actually end
 	Score = 0;
@@ -181,7 +226,30 @@ void Load()
 	}
 
 
+	Texture HealthRegenTex;
+	Texture ResupplyTex;
+	Texture enemySlowerTex;
+	Texture WeaponUpgradeTex;
 
+	if (!HealthRegenTex.loadFromFile("res/img/red.png"))
+	{
+		throw std::invalid_argument("Health Regen textures's fucked!");
+	}
+
+	if (!ResupplyTex.loadFromFile("res/img/yellow.png"))
+	{
+		throw std::invalid_argument("Resupply texture's fucked!");
+	}
+
+	if (!enemySlowerTex.loadFromFile("res/img/blue.png"))
+	{
+		throw std::invalid_argument("Enemy Slower texture's fucked!");
+	}
+
+	if (!WeaponUpgradeTex.loadFromFile("res/img/green.png"))
+	{
+		throw std::invalid_argument("Weapon Upgrade texture's fucked!");
+	}
 	////Loading the welcome font
 	//if (!welcomeFont.loadFromFile("res/fonts/orangejuice/orangejuice2.tff"))
 	//{
@@ -279,6 +347,9 @@ int main()
 	//timer for score increase for survival
 	static sf::Clock scoreClock;
 
+	//Powerup clock
+	static sf::Clock powerupClock;
+
 
 
 
@@ -323,7 +394,7 @@ int main()
 
 
 	//Friendly Rocket Vector Array
-	vector<rocket>::const_iterator iter;
+	vector<rocket>::const_iterator rocketIterator;
 	vector<rocket> rocketArray;
 
 	//friendly rocket object
@@ -339,7 +410,26 @@ int main()
 	class missile missile1;
 	missile1.sprite.setTexture(missileTex);
 
+	//Creating powerup objects
+	class healthRegen healthRegen1;
+	class resupply resupply1;
+	class weaponUpgrade weaponUpgrade1;
+	class enemySlower enemySlower1;
+	healthRegen1.sprite.setTexture(HealthRegenTex);
+	resupply1.sprite.setTexture(ResupplyTex);
+	weaponUpgrade1.sprite.setTexture(WeaponUpgradeTex);
+	enemySlower1.sprite.setTexture(enemySlowerTex);
 
+
+	//Powerup Arrays
+	/*vector<healthRegen>::const_iterator healthRegenIterator;
+	vector<healthRegen> healthRegenArray;
+	vector<resupply>::const_iterator resupplyIterator;
+	vector<resupply> resupplyArray;
+	vector<weaponUpgrade>::const_iterator weaponUpgradeIterator;
+	vector<weaponUpgrade> weaponUpgradeArray;
+	vector<enemySlower>::const_iterator enemySlowerIterator;
+	vector<enemySlower> enemySlowerArray;*/
 
 
 
@@ -395,6 +485,7 @@ int main()
 			
 			//Wanted to be able to pause the survival timer but it looks like I'm gonna have to settle for just resetting it when you pause.. which kinda sucks
 			scoreClock.restart();
+			powerupClock.restart();
 			
 		}
 
@@ -444,6 +535,118 @@ int main()
 
 
 
+			//Powerups
+			//randomly spawn one every 30 seconds, reset the clock every time one is picked up 
+			if (powerupClock.getElapsedTime().asSeconds() >= 30
+						&& healthRegen1.spawned == false
+								&& resupply1.spawned == false
+										&& weaponUpgrade1.spawned == false
+												&& enemySlower1.spawned == false)
+			{
+				//randomly select a powerup
+				int powerupSelector = (rand() % 4) + 1;
+
+				switch (powerupSelector)
+				{
+				case 1:
+					//spawn Health
+					healthRegen1.spawned = true;
+					std::cout << "Health Spawned!" << std::endl;
+					std::cout << "" << std::endl;
+					break;
+				case 2:
+					//Spawn ammo
+					resupply1.spawned = true;
+					std::cout << "Resupply Spawned!" << std::endl;
+					std::cout << "" << std::endl;
+					break;
+				case 3:
+					//spawn weapon upgrade
+					weaponUpgrade1.spawned = true;
+					std::cout << "Weapon Upgrade Spawned!" << std::endl;
+					std::cout << "" << std::endl;
+					break;
+				case 4:
+					//spawn enemy slower
+					enemySlower1.spawned = true;
+					std::cout << "Enemy Slower Spawned!" << std::endl;
+					std::cout << "" << std::endl;
+					break;
+				default:
+					break;
+				}
+				powerupClock.restart();
+			}
+
+
+			//Collision detection ------ player --> powerup
+			if (Player.rect.getGlobalBounds().intersects(healthRegen1.rect.getGlobalBounds()))
+			{
+				Player.health = Player.fullHealth;
+				std::cout << "hit health regen" << std::endl;
+				std::cout << "" << std::endl;
+			}
+			if (Player.rect.getGlobalBounds().intersects(resupply1.rect.getGlobalBounds()))
+			{
+				Player.ammo += 25;
+				std::cout << "hit resupply" << std::endl;
+				std::cout << "" << std::endl;
+			}
+			if (Player.rect.getGlobalBounds().intersects(weaponUpgrade1.rect.getGlobalBounds()))
+			{
+				rocket1.damage *= 2;
+				std::cout << "hit weapon upgrade" << std::endl;
+				std::cout << "" << std::endl;
+			}
+			if (Player.rect.getGlobalBounds().intersects(enemySlower1.rect.getGlobalBounds()))
+			{
+				//enemy arrays movement speed decrease
+				counter = 0;
+				for (enemy1Iterator = enemy1Array.begin(); enemy1Iterator != enemy1Array.end(); enemy1Iterator++)
+				{
+					enemy1Array[counter].movementSpeed /= 2;
+					counter++;
+				}
+				counter = 0;
+				for (enemy2Iterator = enemy2Array.begin(); enemy2Iterator != enemy2Array.end(); enemy2Iterator++)
+				{
+					enemy2Array[counter].movementSpeed /= 2;
+					counter++;
+				}
+				counter = 0;
+				for (enemy3Iterator = enemy3Array.begin(); enemy3Iterator != enemy3Array.end(); enemy3Iterator++)
+				{
+					enemy3Array[counter].movementSpeed /= 2;
+					counter++;
+				}
+
+
+				std::cout << "hit enemy slower" << std::endl;
+				std::cout << "" << std::endl;
+			}
+
+
+			//Drawing powerups
+			if (healthRegen1.spawned == true)
+			{
+				window.draw(healthRegen1.sprite);
+			}
+			if (resupply1.spawned == true)
+			{
+				window.draw(resupply1.sprite);
+			}
+			if (weaponUpgrade1.spawned == true)
+			{
+				window.draw(weaponUpgrade1.sprite);
+			}
+			if (enemySlower1.spawned == true)
+			{
+				window.draw(enemySlower1.sprite);
+			}
+
+
+
+
 
 
 			//Collision detection ------ enemy -> player
@@ -487,7 +690,7 @@ int main()
 
 			//Collision detection ------ rocket -> enemy
 			counter = 0;
-			for (iter = rocketArray.begin(); iter != rocketArray.end(); iter++)
+			for (rocketIterator = rocketArray.begin(); rocketIterator != rocketArray.end(); rocketIterator++)
 			{
 				counter2 = 0;
 				for (enemy1Iterator = enemy1Array.begin(); enemy1Iterator != enemy1Array.end(); enemy1Iterator++)
@@ -535,7 +738,7 @@ int main()
 
 			//Delete rockets on collision or after they run out of range 
 			counter = 0;
-			for (iter = rocketArray.begin(); iter != rocketArray.end(); iter++)
+			for (rocketIterator = rocketArray.begin(); rocketIterator != rocketArray.end(); rocketIterator++)
 			{
 
 				//if (rocketArray[counter].rect.getPosition().x > window.getSize().x || rocketArray[counter].rect.getPosition().x < window.getSize().x.)
@@ -550,7 +753,7 @@ int main()
 				{
 					std::cout << "rocket exploded" << std::endl;
 					std::cout << "" << std::endl;
-					rocketArray.erase(iter);
+					rocketArray.erase(rocketIterator);
 					break;
 				}
 				counter++;
@@ -664,7 +867,7 @@ int main()
 			//Draw rockets
 			counter = 0;
 
-			for (iter = rocketArray.begin(); iter != rocketArray.end(); iter++)
+			for (rocketIterator = rocketArray.begin(); rocketIterator != rocketArray.end(); rocketIterator++)
 			{
 				rocketArray[counter].update();
 				window.draw(rocketArray[counter].sprite);
@@ -709,6 +912,12 @@ int main()
 			//Tutorial way of updating player
 			Player.update();
 
+
+			//Update powerups
+			healthRegen1.update();
+			resupply1.update();
+			weaponUpgrade1.update();
+			enemySlower1.update();
 
 
 
