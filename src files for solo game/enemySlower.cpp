@@ -10,28 +10,25 @@ enemySlower::enemySlower()
 
 void enemySlower::update()
 {
-	if (spawned == true && timeLeft > sf::seconds(0))
-	{
-		timeLeft--;
-	}
+	sprite.setPosition(rect.getPosition());
 
-	if (timeLeft <= 0)
+	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
 	{
 		spawned = false;
-		timeLeft = 30;
 		std::cout << "Enemy slower despawned!" << std::endl;
 		std::cout << "" << std::endl;
 	}
 
-	if (activated == true && duration > 0)
+
+
+	if (activated == true && activeClock.getElapsedTime() <= duration) //duration > 0)
 	{
 		spawned = false;
-		duration--;
 		std::cout << "Enemy Slower activated" << std::endl;
 		std::cout << "" << std::endl;
 	}
 
-	if (duration <= 0)
+	if (activeClock.getElapsedTime() >= duration && activated == true)//(duration <= 0)
 	{
 		activated = false;
 		std::cout << "Enemy Slower expired" << std::endl;
