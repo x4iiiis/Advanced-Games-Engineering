@@ -10,14 +10,7 @@ resupply::resupply()
 
 void resupply::update()
 {
-<<<<<<< HEAD
 	sprite.setPosition(rect.getPosition());
-=======
-	/*if (spawned == true && timeLeft > 0)
-	{
-		timeLeft--;
-	}
->>>>>>> origin/master
 
 	if (spawned == true)
 	{
@@ -30,17 +23,4 @@ void resupply::update()
 		}
 	}
 
-<<<<<<< HEAD
-=======
-
-	///*/
-	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
-	{
-		spawned = false;
-		spawnClock.restart();
-		std::cout << "Resupply despawned!" << std::endl;
-		std::cout << "" << std::endl;
-	}
-
->>>>>>> origin/master
 }

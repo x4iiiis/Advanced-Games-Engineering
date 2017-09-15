@@ -165,32 +165,6 @@ void GameOverMethod()
 
 	ifstream InputFile("res/Scoreboard.txt");
 	if(InputFile.is_open())
-<<<<<<< HEAD
-=======
-	{
-		InputFile >> HighScore;
-		std::cout << "Highscore from the file is: " << HighScore << std::endl;
-		std::cout << "" << std::endl;
-
-		//If current score is greater than the highest recorded score, record the current score as the high score
-		if (Score > HighScore)
-		{
-			std::cout << "New high score!" << std::endl;
-			std::cout << "" << std::endl;
-			//HighScore = Score;
-			//Do stuff with high score, writing to a file etc
-			ofstream OutputFile("res/Scoreboard.txt");
-			//OutputFile << HighScore;
-			OutputFile << Score;
-		}
-	}
-
-	/*if(OutputFile)
-	{
-		std::cout << "Scoreboard exists" << std::endl;
-	}*/
-
->>>>>>> origin/master
 	{
 		InputFile >> HighScore;
 		std::cout << "Highscore from the file is: " << HighScore << std::endl;
@@ -209,23 +183,6 @@ void GameOverMethod()
 		}
 	}
 
-<<<<<<< HEAD
-=======
-	/*if(OutputFile)
-	{
-		std::cout << "Scoreboard exists" << std::endl;
-	}*/
-
-
-	//If current score is greater than the highest recorded score, record the current score as the high score
-	//if (Score > HighScore)
-	//{
-	//	HighScore = Score;
-	//	//Do stuff with high score, writing to a file etc
-	//	ofstream OutputFile("res/Scoreboard.txt");
-	//	OutputFile << HighScore;
-	//}
->>>>>>> origin/master
 	
 	std::cout << "High Score: " << HighScore << std::endl;
 	std::cout << "Score :" << Score << std::endl;
@@ -536,6 +493,8 @@ int main()
 				{
 				case 0:
 					std::cout << "Play button pressed" << std::endl;
+					powerupClock.restart();
+					spawnClock.restart();
 					window.clear();
 					Welcome = false;
 					InPlay = true;
@@ -570,6 +529,7 @@ int main()
 		if (Board == true)
 		{
 			Welcome = false;
+			InPlay = false;
 			window.clear();
 			scoreboard.draw(window);
 			window.display();
@@ -580,6 +540,7 @@ int main()
 		if (optionScreen == true)
 		{
 			Welcome = false;
+			InPlay = false;
 			window.clear();
 			difficultySelector.draw(window);
 			window.display();
@@ -601,18 +562,24 @@ int main()
 				{
 				case 1:
 					Difficulty = 1;
+					std::cout << "Difficulty set to: " << Difficulty << std::endl;
+					std::cout << "" << std::endl;
 					optionScreen = false;
 					Welcome = true;
 					window.clear();
 					break;
 				case 2:
 					Difficulty = 2;
+					std::cout << "Difficulty set to: " << Difficulty << std::endl;
+					std::cout << "" << std::endl;
 					optionScreen = false;
 					Welcome = true;
 					window.clear();
 					break;
 				case 3:
 					Difficulty = 3;
+					std::cout << "Difficulty set to: " << Difficulty << std::endl;
+					std::cout << "" << std::endl;
 					optionScreen = false;
 					Welcome = true;
 					window.clear();

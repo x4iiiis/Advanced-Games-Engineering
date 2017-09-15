@@ -7,9 +7,6 @@ public:
 	sf::Time timeLeft = sf::seconds(10);
 	sf::Clock spawnClock;
 
-	sf::Clock activeClock;
-	sf::Clock spawnClock;
-
 	healthRegen();
 	void update();
 };
