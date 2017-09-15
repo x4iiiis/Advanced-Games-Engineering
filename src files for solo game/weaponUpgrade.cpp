@@ -10,11 +10,18 @@ weaponUpgrade::weaponUpgrade()
 
 void weaponUpgrade::update()
 {
+<<<<<<< HEAD
 	sprite.setPosition(rect.getPosition());
 
 	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
 	{
 		spawned = false;
+=======
+	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
+	{
+		spawned = false;
+		spawnClock.restart();
+>>>>>>> origin/master
 		std::cout << "Weapon Upgrade despawned!" << std::endl;
 		std::cout << "" << std::endl;
 	}
@@ -22,6 +29,10 @@ void weaponUpgrade::update()
 	if (activated == true && activeClock.getElapsedTime() >= duration) //duration > 0)
 	{
 		spawned = false;
+<<<<<<< HEAD
+=======
+		activeClock.restart();
+>>>>>>> origin/master
 		std::cout << "Weapon Upgrade activated" << std::endl;
 		std::cout << "" << std::endl;
 	}
@@ -29,6 +40,7 @@ void weaponUpgrade::update()
 	if (activeClock.getElapsedTime() >= duration && activated == true)//(duration <= 0)
 	{
 		activated = false;
+		spawnClock.restart();
 		std::cout << "Weapon Upgrade expired" << std::endl;
 		std::cout << "" << std::endl;
 

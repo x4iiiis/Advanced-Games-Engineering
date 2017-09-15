@@ -11,10 +11,18 @@ healthRegen::healthRegen()
 
 void healthRegen::update()
 {
+<<<<<<< HEAD
 	sprite.setPosition(rect.getPosition());
+=======
+	/*if (spawned == true && timeLeft > 0)
+	{
+		timeLeft--;
+	}
+>>>>>>> origin/master
 
 	if (spawned == true)
 	{
+<<<<<<< HEAD
 		if (spawnClock.getElapsedTime() >= timeLeft)
 		{
 			spawnClock.restart();
@@ -22,5 +30,19 @@ void healthRegen::update()
 			std::cout << "Health despawned!" << std::endl;
 			std::cout << "" << std::endl;
 		}
+=======
+		spawned = false;
+		timeLeft = 30;
+		std::cout << "Health Regen despawned!" << std::endl;
+		std::cout << "" << std::endl;
+	}*/
+
+	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
+	{
+		spawned = false;
+		spawnClock.restart();
+		std::cout << "Resupply despawned!" << std::endl;
+		std::cout << "" << std::endl;
+>>>>>>> origin/master
 	}
 }

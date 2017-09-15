@@ -10,11 +10,29 @@ enemySlower::enemySlower()
 
 void enemySlower::update()
 {
+<<<<<<< HEAD
 	sprite.setPosition(rect.getPosition());
+
+	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
+=======
+	//if (spawned == true && spawnClock.getElapsedTime().asSeconds > timeLeft)//timeLeft > sf::seconds(0))
+	//{
+	//	timeLeft--;
+	//}
+
+	/*if (timeLeft <= 0)
+>>>>>>> origin/master
+	{
+		spawned = false;
+		std::cout << "Enemy slower despawned!" << std::endl;
+		std::cout << "" << std::endl;
+	}*/
+
 
 	if (spawnClock.getElapsedTime() >= timeLeft && spawned == true)
 	{
 		spawned = false;
+		spawnClock.restart();
 		std::cout << "Enemy slower despawned!" << std::endl;
 		std::cout << "" << std::endl;
 	}
@@ -24,6 +42,10 @@ void enemySlower::update()
 	if (activated == true && activeClock.getElapsedTime() <= duration) //duration > 0)
 	{
 		spawned = false;
+<<<<<<< HEAD
+=======
+		activeClock.restart();
+>>>>>>> origin/master
 		std::cout << "Enemy Slower activated" << std::endl;
 		std::cout << "" << std::endl;
 	}
@@ -31,6 +53,7 @@ void enemySlower::update()
 	if (activeClock.getElapsedTime() >= duration && activated == true)//(duration <= 0)
 	{
 		activated = false;
+		spawnClock.restart();
 		std::cout << "Enemy Slower expired" << std::endl;
 		std::cout << "" << std::endl;
 
